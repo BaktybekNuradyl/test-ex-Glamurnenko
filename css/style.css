@@ -1,0 +1,343 @@
+/* general styles start */
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oranienbaum', serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+/* general styles end */
+
+/* nav styles start */
+.nav__main{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+.nav__fixed{
+    position:fixed;
+    top:10px;
+    background: black;
+    z-index: 1000;
+}
+.nav__bg-light{
+    background-color: transparent;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.d-flex a{
+    color: whitesmoke;
+}
+.d-flex a:hover,
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: #6fc4d4;
+    transition: all ease .4s;
+}
+.nav__phone{
+    display: flex;
+    flex-direction: column;
+}
+.nav__social{
+    display: flex;
+    align-items: center;
+    margin-right: 10em;
+}
+
+.nav__social .vk-link,
+.nav__social .face-link,
+.nav__social .insta-link{
+    margin-left: 15px;
+    background-image: url('../img/vk.png');
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    transition: all ease .1s;
+    cursor: pointer;
+}
+.nav__social .face-link{
+    background-image: url('../img/facebook.png');
+}
+.nav__social .insta-link{
+    background-image: url('../img/insta.png');
+}
+.nav__social .vk-link:hover,
+.nav__social .face-link:hover,
+.nav__social .insta-link:hover{
+    background-position: 0 -25px;
+}
+
+/* nav styles end */
+
+/* header styles start */
+
+.header{
+    background-image: url('../img/bg-main.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__logo{
+    margin-bottom: 5em;
+}
+.header__title{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.header__desc{
+    font-size: 16px;
+    color: #cdb380;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all ease .5s;
+}
+.header__desc:hover{
+    color: #e2ab3d;
+}
+
+/* header styles  end */
+
+/* help section styles start */
+
+.help{
+    background-color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.help::before{
+    content: 'New one';
+    background-color: red;
+    padding: 2px 80px;
+    position: absolute;
+    left: -50px;
+    top: 45px;
+    font-size: 18px;
+    color: white;
+    transform: rotate(-45deg);
+}
+.help__title,.help__subtitle{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.help__desc,.help__subdesc{
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
+}
+.help__subtitle,
+.help__subdesc{
+    text-align: left;
+    width: 45%;
+    margin: 0 auto;
+}
+.help__subdesc{
+    font-size: 16px;
+    padding-top: 15px;
+    text-transform: none;
+}
+.help__img{
+  width: 100%;
+  padding: 20px 0 60px;
+}
+
+
+.table__wrap{
+    width: 45%;
+    margin: 30px auto;
+}
+.table__title{
+    font-size: 22px;
+    padding: 17px 0;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #8080804f;
+}
+.table>:not(:last-child)>:last-child>*{
+    background-color: #8bf4bb !important;
+}
+.table__btn{
+    background-color: red;
+    padding: 6px 60px;
+    color: white;
+    transition: all ease .5s;
+    border: 1px solid transparent;
+}
+.table__btn:hover{
+   color: whitesmoke;
+}
+.table>:not(caption)>*>*{
+    padding: 15px 20px;
+}
+.border-color{
+    border-color: #8080804f;
+}
+
+.service{
+    width: 90%;
+    margin: 20px auto 80px;
+}
+
+.service__title{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.card-title,
+.card-text{
+    font-weight: 600;
+}
+.card{
+    transform: scale(1);
+    transition: all ease .5s;
+    margin: 0 30px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-body span{
+    font-weight:300;
+    font-size: 14px;
+}
+.none-price{
+    position: relative;
+}
+.none-price::after{
+    content: "";
+    border-top: 1px solid red;
+    top: 0;
+    left: 0;
+}
+.card-body{
+    padding: 30px;
+}
+
+.feedback__item{
+    display: flex;
+    align-items: center;  
+    margin: 30px 0 50px;
+}
+.feedback__img{
+    width: 65%;
+}
+/* help section styles end */
+
+/* footer styles start  */
+
+.footer{
+    background-color: black;
+    padding: 50px 0 30px;
+}
+.footer p{
+    color: white;
+    padding-bottom: 12px;
+}
+
+/* scroll to top element  */
+
+ .scroll_top {
+    position: fixed; 
+    bottom: -50px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px; 
+    border: none; 
+    border-radius: 10px; 
+    background: black;
+    z-index: 100; 
+    outline: none; 
+    cursor: pointer;
+    transition: 0.4s;
+    color: white; 
+    border: 2px solid white;
+}
+
+.scroll_top:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff; 
+    border-left: 2px solid #fff; 
+    transform: rotate(45deg);
+    position: absolute; 
+    top: 7px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.scroll_top.active {
+    bottom: 20px;
+}
+/* scroll to top element */
+
+
+/* burger element */
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url('../img/icon/burger.svg') !important;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background: black;
+}
+
+
+.nav__social{
+    margin-right: 9em;
+    flex-direction: column;
+}
+.header__logo{
+    height: 80px;
+}
+.help__title, .help__subtitle{
+    font-size: 20px;
+}
+.help__desc, .help__subdesc{
+    font-size: 15px;
+}
+.help__subtitle, .help__subdesc{
+    width: 85%;
+}
+.table__wrap{
+    width: 90%;
+}
+.img__wrap img{
+    width: 100%;
+}
+
+/* footer styles end */
